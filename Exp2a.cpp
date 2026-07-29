@@ -9,12 +9,14 @@ string encrypt(string s, int shift){
             int newChar = (num + shift)%26;
             char ch = newChar + 'A';
             result += ch;
-        }else if(islower(c)){
+        }
+        else if(islower(c)){
             int num = c - 'a';
             int newChar = (num + shift)%26;
             char ch = newChar + 'a';
             result += ch;
-        }else{
+        }
+        else{
             result += c;
         }
     }
